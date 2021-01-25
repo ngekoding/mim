@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $.getJSON("assets/json/donates.json", function(data){
-      var lastUpdate = moment(data.lastUpdate).format("LL");
+  $.getJSON("assets/json/donations.json", function(data){
+      var lastUpdate = moment(data.lastUpdate).format("LLL");
       
       var total = 0;
       var tbody = "";
