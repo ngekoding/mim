@@ -1,0 +1,53 @@
+{
+  "lastUpdate": "2021-01-25",
+  "histories": [
+    {
+      "date": "2021-01-23",
+      "name": "Ib***",
+      "city": "Jakarta",
+      "amount": 200000
+    },
+    {
+      "date": "2021-01-23",
+      "name": "Pa***",
+      "city": "Lombok",
+      "amount": 200000
+    },
+    {
+      "date": "2021-01-23",
+      "name": "Ma***",
+      "city": "Bekasi",
+      "amount": 150000
+    },
+    {
+      "date": "2021-01-23",
+      "name": "Tidak Diketahui",
+      "city": "-",
+      "amount": 50000
+    },
+    {
+      "date": "2021-01-24",
+      "name": "Ba***",
+      "city": "Tangerang",
+      "amount": 50000
+    },
+    {
+      "date": "2021-01-24",
+      "name": "Me***",
+      "city": "Yogyakarta",
+      "amount": 500000
+    },
+    {
+      "date": "2021-01-24",
+      "name": "Ek***",
+      "city": "Yogyakarta",
+      "amount": 150000
+    },
+    {
+      "date": "2021-01-25",
+      "name": "Ai***",
+      "city": "Yogyakarta",
+      "amount": 1000000
+    }
+  ]
+}
