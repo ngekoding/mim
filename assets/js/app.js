@@ -2,40 +2,67 @@ $(document).ready(function(){
   $.getJSON("assets/json/donations.json", function(data){
       var lastUpdate = moment(data.lastUpdate).format("LLL") + " WITA";
       
-      var total = 0;
       var donations = {};
 
-      // Gouping by date
+      // Gouping by month and date
       data.histories.forEach((item, index) => {
-        if (donations.hasOwnProperty(item.date)) {
-          donations[item.date].data.push(item);
-        } else {
-          donations[item.date] = {
-            date: item.date,
-            data: [item]
+        var month = item.date.substring(0, 7);
+        var date = item.date;
+
+        // Checking month group 
+        if (!donations.hasOwnProperty(month)) {
+          donations[month] = {
+            month: item.date,
+            dates: {}
           };
         }
 
-        total += item.amount;  
+        if (!donations[month].dates.hasOwnProperty(date)) {
+          donations[month].dates[date] = {
+            date: item.date,
+            data: [item]
+          };
+        } else {
+          donations[month].dates[date].data.push(item);
+        }
       });
 
       var tbody = "";
       var num = 1;
-      for (var [key, value] of Object.entries(donations)) {
-        var rowspan = value.data.length;
-        var rowspanClass = rowspan > 1 ? "rowspan" : "";
-        value.data.forEach((item, index) => {
-          var row = "<tr>";
-          row += `<td align="center">${num++}</td>`;
-          if (index == 0) {
-            row += `<td rowspan="${rowspan}" align="center" class="${rowspanClass}">${moment(value.date).format("LL")}</td>`;
-          }
-          row += `<td>${item.name}</td>`;
-          row += `<td>${item.city}</td>`;
-          row += `<td align="right">${item.amount.toLocaleString("id")}</td>`;
-          row += "</tr>";
-          tbody += row;
-        });
+      var monthLength = Object.keys(donations).length;
+      var total = 0;
+
+      // Iterating months
+      for (var [monthKey, month] of Object.entries(donations)) {
+        // Iterating dates
+        var monthTotal = 0;
+        for (var [dateKey, value] of Object.entries(month.dates)) {
+          var rowspan = value.data.length;
+          var rowspanClass = rowspan > 1 ? "rowspan" : "";
+          value.data.forEach((item, index) => {
+            monthTotal += item.amount;
+            total += item.amount;
+
+            var row = "<tr>";
+            row += `<td align="">${num++}</td>`;
+            if (index == 0) {
+              row += `<td rowspan="${rowspan}" align="center" class="${rowspanClass}">${moment(value.date).format("LL")}</td>`;
+            }
+            row += `<td>${item.name}</td>`;
+            row += `<td>${item.city}</td>`;
+            row += `<td align="right">${item.amount.toLocaleString("id")}</td>`;
+            row += "</tr>";
+            tbody += row;
+          });
+        }
+
+        // Show month total if there is multiple months
+        if (monthLength > 1) {
+          tbody += "<tr>";
+          tbody += `<th colspan="4" align="center">Total ${moment(monthKey).format("MMMM YYYY")}</th>`;
+          tbody += `<th align="right">${monthTotal.toLocaleString("id")}</th>`;
+          tbody += "</tr>";
+        }
       }
 
       // Update the UI
