@@ -3,19 +3,19 @@
   "histories": [
     {
       "date": "2021-01-23",
-      "name": "Ib***",
+      "name": "Ib_",
       "city": "Jakarta",
       "amount": 200000
     },
     {
       "date": "2021-01-23",
-      "name": "Pa***",
+      "name": "Pa_",
       "city": "Lombok",
       "amount": 200000
     },
     {
       "date": "2021-01-23",
-      "name": "Ma***",
+      "name": "Ma_",
       "city": "Bekasi",
       "amount": 150000
     },
@@ -27,37 +27,37 @@
     },
     {
       "date": "2021-01-24",
-      "name": "Ba***",
+      "name": "Ba_",
       "city": "Tangerang",
       "amount": 50000
     },
     {
       "date": "2021-01-24",
-      "name": "Me***",
+      "name": "Me_",
       "city": "Yogyakarta",
       "amount": 500000
     },
     {
       "date": "2021-01-24",
-      "name": "Ek***",
+      "name": "Ek_",
       "city": "Yogyakarta",
       "amount": 150000
     },
     {
       "date": "2021-01-25",
-      "name": "Ai***",
+      "name": "Ai_",
       "city": "Yogyakarta",
       "amount": 1000000
     },
     {
       "date": "2021-01-25",
-      "name": "Ri***",
+      "name": "Ri_",
       "city": "Yogyakarta",
       "amount": 500000
     },
     {
       "date": "2021-01-25",
-      "name": "Am***",
+      "name": "Am_",
       "city": "Yogyakarta",
       "amount": 500000
     }
