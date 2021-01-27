@@ -4,6 +4,12 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYG2TMQGNM"></script>
   <script>
+    // Disable analytics for localhost
+    var host = window.location.hostname;
+    if (host == 'localhost') {
+      window['ga-disable-G-XYG2TMQGNM'] = true;
+    }
+    
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
