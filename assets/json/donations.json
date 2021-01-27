@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2021-01-25 14:50",
+  "lastUpdate": "2021-01-27 19:32",
   "histories": [
     {
       "date": "2021-01-23",
@@ -60,6 +60,12 @@
       "name": "Am_",
       "city": "Yogyakarta",
       "amount": 500000
+    },
+    {
+      "date": "2021-01-27",
+      "name": "Ah_",
+      "city": "Bengkulu",
+      "amount": 50000
     }
   ]
 }
