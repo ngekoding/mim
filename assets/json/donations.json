@@ -3,67 +3,67 @@
   "histories": [
     {
       "date": "2021-01-23",
-      "name": "Ib_",
+      "name": "IH_",
       "city": "Jakarta",
       "amount": 200000
     },
     {
       "date": "2021-01-23",
-      "name": "Pa_",
+      "name": "PI_",
       "city": "Lombok",
       "amount": 200000
     },
     {
       "date": "2021-01-23",
-      "name": "Ma_",
+      "name": "M_",
       "city": "Bekasi",
       "amount": 150000
     },
     {
       "date": "2021-01-23",
-      "name": "None",
+      "name": "Tidak Konfirmasi",
       "city": "-",
       "amount": 50000
     },
     {
       "date": "2021-01-24",
-      "name": "Ba_",
+      "name": "BZ_",
       "city": "Tangerang",
       "amount": 50000
     },
     {
       "date": "2021-01-24",
-      "name": "Me_",
+      "name": "PM_",
       "city": "Yogyakarta",
       "amount": 500000
     },
     {
       "date": "2021-01-24",
-      "name": "Ek_",
+      "name": "EH_",
       "city": "Yogyakarta",
       "amount": 150000
     },
     {
       "date": "2021-01-25",
-      "name": "Ai_",
+      "name": "BP_",
       "city": "Yogyakarta",
       "amount": 1000000
     },
     {
       "date": "2021-01-25",
-      "name": "Ri_",
+      "name": "RE_",
       "city": "Yogyakarta",
       "amount": 500000
     },
     {
       "date": "2021-01-25",
-      "name": "Am_",
+      "name": "AL_",
       "city": "Yogyakarta",
       "amount": 500000
     },
     {
       "date": "2021-01-27",
-      "name": "Ah_",
+      "name": "AH_",
       "city": "Bengkulu",
       "amount": 50000
     }
