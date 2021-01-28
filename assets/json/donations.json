@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2021-01-28 18:03",
+  "lastUpdate": "2021-01-28 20:51",
   "histories": [
     {
       "date": "2021-01-23",
@@ -71,6 +71,12 @@
       "date": "2021-01-28",
       "name": "ZM_",
       "city": "Malaysia",
+      "amount": 500000
+    },
+    {
+      "date": "2021-01-28",
+      "name": "Adhitya Rachman رحمه الله",
+      "city": "Jayapura",
       "amount": 500000
     }
 
