@@ -1,6 +1,12 @@
 body
   background: #efefef
 
+@mixin card-style
+  background: #ffffff
+  padding: 20px
+  border-radius: 4px
+  box-shadow: 0 2px 3px #cccccc
+
 .container
   max-width: 650px
   padding: 30px 20px
@@ -14,60 +20,72 @@ body
       @media screen and (max-width: 464px)
         display: inline
   .header
-    background: #ffffff
-    padding: 20px
-    border-radius: 4px
+    @include card-style
     margin-top: 20px
-    box-shadow: 0 2px 3px #cccccc
     .donate-total
       margin-top: 10px
     .donate-update
       font-size: 13px
       color: #666666
   .donating
-    padding: 20px
+    @include card-style
     background: #34495e
     color: #ffffff
-    border-radius: 4px
     margin-top: 20px
-    box-shadow: 0 2px 3px #cccccc
     a 
       color: #2ecc71
     .rek-number
       letter-spacing: 3px
+  .delivered-histories
+    @include card-style
+    margin-top: 20px
+    .delivered-header
+      display: flex
+      justify-content: space-between
+      .btn-detail
+        font-size: 12px
+        cursor: pointer
+        color: #2ecc71
+        &:hover 
+          text-decoration: underline
+    .table-container
+      box-shadow: none
+      background: #efefef
+      .table-histories tbody tr:last-child td
+        border-bottom: none
   .histories
     margin-top: 20px
-    .table-container
-      margin-top: 10px
-      background: #ffffff
-      border-radius: 4px
-      box-shadow: 0 2px 3px #cccccc
-      overflow-x: scroll
-      overflow-y: hidden
-      .table-histories
-        width: 100%
-        border-collapse: collapse
-        font-size: 13px
-        thead tr th
-          background: #34495e
-          color: #ffffff
-          border-bottom: none
-        tbody tr td.rowspan
-          border-left: 1px solid #cccccc
-          border-right: 1px solid #cccccc
-        tr th:first-child,
-        tr td:first-child
-          padding-left: 20px
-        tr th:last-child,
-        tr td:last-child
-          padding-right: 20px
-        tr th, tr td 
-          border-bottom: 1px solid #cccccc
-          padding: 10px 6px
-          white-space: nowrap
-        tfoot tr th
-          border-bottom: none
-          background: #efefef
+  .table-container
+    margin-top: 10px
+    background: #ffffff
+    border-radius: 4px
+    box-shadow: 0 2px 3px #cccccc
+    overflow-x: scroll
+    overflow-y: hidden
+    .table-histories
+      width: 100%
+      border-collapse: collapse
+      font-size: 13px
+      thead tr th
+        background: #34495e
+        color: #ffffff
+        border-bottom: none
+      tbody tr td.rowspan
+        border-left: 1px solid #cccccc
+        border-right: 1px solid #cccccc
+      tr th:first-child,
+      tr td:first-child
+        padding-left: 20px
+      tr th:last-child,
+      tr td:last-child
+        padding-right: 20px
+      tr th, tr td 
+        border-bottom: 1px solid #cccccc
+        padding: 10px 6px
+        white-space: nowrap
+      tfoot tr th
+        border-bottom: none
+        background: #efefef
 footer
   text-align: center
   font-size: 12px

@@ -27,6 +27,19 @@ $(document).ready(function(){
         }
       });
 
+      // Delivered
+      var deliveredBody = $('.delivered-histories table tbody').empty();
+      data.deliveredes.forEach((delivered, index) => {
+        deliveredBody.append(`
+          <tr>
+            <td align="center">${index + 1}</td>
+            <td>${moment(delivered.date).format("LL")}</td>
+            <td align="right">${delivered.total.toLocaleString("id")}</td>
+            <td>${delivered.receiver}</td>
+          </tr>
+        `);
+      });
+
       var tbody = "";
       var num = 1;
       var monthLength = Object.keys(donations).length;
@@ -67,10 +80,15 @@ $(document).ready(function(){
 
       // Update the UI
       $('.donate-total').html("Rp" + total.toLocaleString("id"));
-      $('.donate-total-histories').html(total.toLocaleString("id"));
       $('.donate-update .date').html(lastUpdate);
-      $('.table-histories tbody').html(tbody);
+      $('.histories .table-histories tbody').html(tbody);
+      $('.histories .donate-total-histories').html(total.toLocaleString("id"));
   }).fail(function(){
       console.log("An error has occurred.");
+  });
+
+  $('.delivered-histories .table-container').hide();
+  $('.delivered-histories .btn-detail').click(function() {
+    $('.delivered-histories .table-container').slideToggle();
   });
 });
