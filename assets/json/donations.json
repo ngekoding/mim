@@ -1,5 +1,4 @@
 {
-  "lastUpdate": "2021-01-27 07:32",
   "deliveredes": [
     {
       "date": "2021-02-02",
@@ -7,6 +6,7 @@
       "receiver": "Bapak Saifudin (Ketua Pengurus Masjid)"
     }
   ],
+  "lastUpdate": "2021-02-01 07:32",
   "histories": [
     {
       "date": "2021-01-23",
@@ -73,6 +73,30 @@
       "name": "AH_",
       "city": "Bengkulu",
       "amount": 50000
+    },
+    {
+      "date": "2021-01-28",
+      "name": "ZM_",
+      "city": "Malaysia",
+      "amount": 500000
+    },
+    {
+      "date": "2021-01-28",
+      "name": "AR_",
+      "city": "Jayapura",
+      "amount": 500000
+    },
+    {
+      "date": "2021-01-31",
+      "name": "DK_",
+      "city": "Yogyakarta",
+      "amount": 100000
+    },
+    {
+      "date": "2021-02-01",
+      "name": "N_",
+      "city": "Yogyakarta",
+      "amount": 500000
     }
   ]
 }
