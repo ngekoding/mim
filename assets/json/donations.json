@@ -97,6 +97,13 @@
       "name": "N_",
       "city": "Yogyakarta",
       "amount": 500000
+    },
+    {
+      "date": "2021-03-03",
+      "name": "N_",
+      "city": "Yogyakarta",
+      "amount": 250000
     }
+
   ]
 }
