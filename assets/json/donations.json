@@ -4,9 +4,19 @@
       "date": "2021-02-02",
       "total": 4950000,
       "receiver": "Bapak Saifudin (Ketua Pengurus Masjid)"
+    },
+    {
+      "date": "2021-03-05",
+      "total": 250000,
+      "receiver": "Bapak Saifudin (Ketua Pengurus Masjid)"
+    },
+    {
+      "date": "2021-12-07",
+      "total": 1100000,
+      "receiver": "Bapak Saifudin (Ketua Pengurus Masjid)"
     }
   ],
-  "lastUpdate": "2021-02-01 07:32",
+  "lastUpdate": "2021-12-10 13:00",
   "histories": [
     {
       "date": "2021-01-23",
@@ -97,6 +107,18 @@
       "name": "N_",
       "city": "Yogyakarta",
       "amount": 500000
+    },
+    {
+      "date": "2021-03-03",
+      "name": "N_",
+      "city": "Yogyakarta",
+      "amount": 250000
+    },
+    {
+      "date": "2021-12-06",
+      "name": "AR_",
+      "city": "Jayapura",
+      "amount": 1100000
     }
   ]
 }
